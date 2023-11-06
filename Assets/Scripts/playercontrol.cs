@@ -18,6 +18,8 @@ public class playercontrol : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+
+        _rb.freezeRotation = true;
         
         lookLeft = new Vector2 (0, 0);
         lookRight = new Vector2 (0, 0);
